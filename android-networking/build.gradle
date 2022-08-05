@@ -40,11 +40,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     testCompile "junit:junit:$rootProject.ext.jUnitVersion"
     androidTestCompile "com.squareup.okhttp3:mockwebserver:$rootProject.ext.mockWebServerVersion"
-    compile "com.squareup.okhttp3:okhttp:$rootProject.ext.okHttp3Version"
-    compile "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
-    compile "com.android.support:appcompat-v7:$rootProject.ext.supportAppCompatVersion"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okHttp3Version"
+    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportAppCompatVersion"
+    implementation 'com.github.jitpack:gradle-simple:1.0'
 }
 //apply from: 'upload.gradle'
